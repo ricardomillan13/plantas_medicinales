@@ -10,7 +10,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="mb-5">
     <!-- Aqui empieza la Navbar -->
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
@@ -55,8 +55,8 @@
 
     <!-- Aquí empieza Hero section -->
     <main class="hero">
-        <div class="container-fluid mb-4 text-center py-5">
-            <img class="d-block mx-auto mb-4 w-50 rounded" src="./images/Banner.jpg" alt="hero banner">
+        <div class="container-fluid mb-4 text-center py-1">
+
             <h1>
                 Descubre el Poder Curativo<br>
                 de las Plantas Medicinales
@@ -72,7 +72,7 @@
                 <a href="#" class="button secondary">Buscar por Síntomas</a>
             </div>
         </div>
-
+        <img class="d-block mx-auto mb-4 w-50 rounded" src="./images/Banner.jpg" alt="hero banner">
         <section class="py-5 text-center">
             <div class="container">
 
@@ -92,124 +92,128 @@
                 </a>
     </main>
     <!-- Hero Section -->
-     
-<!-- Separación entre secciones -->
-<div class="my-5"></div> 
 
-<!-- Carts de imagenes -->
-<div class="container card-group my-5 plants">
-    <div class="card">
-        <img src="./images/manza.jfif" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title"> Manzanilla </h5>
-            <p class="card-text">Planta herbácea anual de la familia de las asteráceas, reconocida mundlaimente por sus
-                propiedades calmantes y digestivas.</p>
-            <p class="card-text"><small class="text-body-secondary">Última actualización hace 3 mins</small></p>
+    <!-- Cards de imagenes -->
+    <section class="container plants my-5">
+        <h2>Plantas medicinales</h2>
+
+        <div class="card-group  mt-3">
+            <div class="card">
+                <img src="./images/manza.jfif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> Manzanilla </h5>
+                    <p class="card-text">Planta herbácea anual de la familia de las asteráceas, reconocida mundlaimente
+                        por sus
+                        propiedades calmantes y digestivas.</p>
+                    <p class="card-text"><small class="text-body-secondary">Última actualización hace 3 mins</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/ginger-plant-500x500-1-400x400.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> Jenjibre </h5>
+                    <p class="card-text">Rizoma picante originario de Asia, ampliamente uitilizado en medicina
+                        tradicional por
+                        sus potentes propiedades antinfiamatorias y...</p>
+                    <p class="card-text"><small class="text-body-secondary">Última actualización hace 3 mins</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/menta.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> Menta </h5>
+                    <p class="card-text">Hierba aromática perenne de la famila Lamiaceae, conocida por su refrescante
+                        aroma y
+                        sus beneficios para el sistema digestivo.</p>
+                    <p class="card-text"><small class="text-body-secondary">Última actualización hace 3 mins</small></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separación entre secciones -->
+    <div class="my-5"></div>
+    <!-- Carts de imagenes -->
+
+    <section class="articles">
+        <h2>Últimas entradas del blog</h2>
+        <div class="container cards">
+
+            <article class="article-card">
+                <span class="tag primary">Fundamentos</span>
+                <h3>Introducción al mundo de las Plantas Medicinales</h3>
+                <p>
+                    Descubre cómo las plantas medicinales han sido utilizadas durante milenios
+                    para tratar diversas dolencias y cómo pueden integrarse en tu vida diaria.
+                </p>
+            </article>
+
+            <article class="article-card">
+                <span class="tag primary">Cultivo</span>
+                <h3>Cómo cultivar plantas medicinales en casa</h3>
+                <p>
+                    Guía práctica para comenzar tu propio jardín de plantas medicinales,
+                    incluso en espacios pequeños y con cuidados básicos.
+                </p>
+            </article>
+
+            <article class="article-card">
+                <span class="tag primary">Preparación</span>
+                <h3>El arte de preparar infusiones perfectas</h3>
+                <p>
+                    Aprende las técnicas correctas para extraer el máximo beneficio
+                    de tus plantas medicinales mediante infusiones.
+                </p>
+            </article>
+
+        </div>
+    </section>
+    <!-- Contenido de artículos (tarjeta) -->
+
+
+    <!-- Fondo pegajoso-->
+    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#avisoModal">
+        ⚠️ Aviso Importante
+    </button>
+
+    <div class="modal fade" id="avisoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Encabezado -->
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title">
+                        ⚠️ Aviso Importante ⚠️
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Cuerpo -->
+                <div class="modal-body">
+                    <p>
+                        Las plantas medicinales contienen compuestos activos potentes.
+                        Aunque son naturales, pueden interactuar con medicamentos y tener contraindicaciones.
+                    </p>
+                    <p>
+                        Consulte a un profesional de la salud antes de consumir cualquier planta medicinal.
+                        La información aquí proporcionada es únicamente educativa y no sustituye el consejo médico
+                        profesional.
+                    </p>
+                </div>
+
+                <!-- Pie -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+
+            </div>
         </div>
     </div>
-    <div class="card">
-        <img src="./images/ginger-plant-500x500-1-400x400.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title"> Jenjibre </h5>
-            <p class="card-text">Rizoma picante originario de Asia, ampliamente uitilizado en medicina tradicional por
-                sus potentes propiedades antinfiamatorias y...</p>
-            <p class="card-text"><small class="text-body-secondary">Última actualización hace 3 mins</small></p>
-        </div>
-    </div>
-    <div class="card">
-        <img src="./images/menta.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title"> Menta </h5>
-            <p class="card-text">Hierba aromática perenne de la famila Lamiaceae, conocida por su refrescante aroma y
-                sus beneficios para el sistema digestivo.</p>
-            <p class="card-text"><small class="text-body-secondary">Última actualización hace 3 mins</small></p>
-        </div>
-    </div>
-</div>
-<!-- Carts de imagenes -->
 
-<section class="articles">
-    <div class="container cards">
-
-        <article class="article-card">
-            <span class="tag primary">Fundamentos</span>
-            <h3>Introducción al mundo de las Plantas Medicinales</h3>
-            <p>
-                Descubre cómo las plantas medicinales han sido utilizadas durante milenios
-                para tratar diversas dolencias y cómo pueden integrarse en tu vida diaria.
-            </p>
-        </article>
-
-        <article class="article-card">
-            <span class="tag primary">Cultivo</span>
-            <h3>Cómo cultivar plantas medicinales en casa</h3>
-            <p>
-                Guía práctica para comenzar tu propio jardín de plantas medicinales,
-                incluso en espacios pequeños y con cuidados básicos.
-            </p>
-        </article>
-
-        <article class="article-card">
-            <span class="tag primary">Preparación</span>
-            <h3>El arte de preparar infusiones perfectas</h3>
-            <p>
-                Aprende las técnicas correctas para extraer el máximo beneficio
-                de tus plantas medicinales mediante infusiones.
-            </p>
-        </article>
-
-    </div>
-</section>
-
- 
-<!-- Contenido de artículos (tarjeta) -->
-
-
-<!-- Fondo pegajoso-->
- <button type="button" class="btn btn-warning"
-        data-bs-toggle="modal"
-        data-bs-target="#avisoModal">
-  ⚠️ Aviso Importante
-</button>
-
-<div class="modal fade" id="avisoModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-
-      <!-- Encabezado -->
-      <div class="modal-header bg-warning">
-        <h5 class="modal-title">
-          ⚠️ Aviso Importante ⚠️
-        </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <!-- Cuerpo -->
-      <div class="modal-body">
-        <p>
-          Las plantas medicinales contienen compuestos activos potentes.
-          Aunque son naturales, pueden interactuar con medicamentos y tener contraindicaciones.
-        </p>
-        <p>
-          Consulte a un profesional de la salud antes de consumir cualquier planta medicinal.
-          La información aquí proporcionada es únicamente educativa y no sustituye el consejo médico profesional.
-        </p>
-      </div>
-
-      <!-- Pie -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-          Cerrar
-        </button>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
-
 </html>

@@ -3,7 +3,11 @@
     --color-de-encabezados: #314d4a; 
     --color-de-texto: #54787d; 
     --color-iconos-advertencia: #ebe68d;
-    --color-de-fondo: #c6cca5;
+    --color-de-fondo: #b7c181;
+}
+
+body {
+    background-color: var(--color-de-fondo);
 }
 
 .navbar-brand h1 {
@@ -13,7 +17,7 @@
 /* HERO */
 .hero {
   text-align: center;
-  padding: 100px 20px 50px;
+  padding: 30px 20px 50px;
   background: (radial-gradient(circle, #ffffff, #f2eeeb 100%));
   margin-bottom: 4rem;
 }
@@ -92,7 +96,7 @@
 }
 
 
-.articles h2 {
+.plants h2, .articles h2 {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 1.4rem;
@@ -105,7 +109,7 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
 }
-
+    
 /* Cards */
 
 .card {
@@ -117,6 +121,7 @@
 }
 
 .article-card {
+    border: 1px solid #e5e7eb;
     border-radius: 14px;
     padding: 1.5rem;
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
@@ -124,15 +129,18 @@
     flex-direction: column;
     gap: 0.8rem;
 }
+
 .plants img {
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
 }
+
 .card h3{
     font-size: 1.05rem;
     line-height: 1.4;
 }
+
 .card p{
     font-size: 0.9rem;
     color: #4b5563; 
@@ -149,7 +157,8 @@
 }
 
 .btn-warning {
-    position: 
+    position: -webkit-sticky;
+    position: fixed;
+    bottom: 20px;
+    z-index: 100;
 }
-
-
