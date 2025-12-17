@@ -3,10 +3,10 @@
     --color-de-encabezados: #314d4a; 
     --color-de-texto: #54787d; 
     --color-iconos-advertencia: #ebe68d;
-    --color-de-fondo: #b7c181;
+    --color-de-fondo: #b7c18149;
 }
 
-body {
+.mb-5 {
     background-color: var(--color-de-fondo);
 }
 
@@ -73,6 +73,31 @@ body {
   background: #f0f3ef;
 }
 
+.btn-warning {
+    position: -webkit-sticky;
+    position: fixed;
+    bottom: 20px;
+    z-index: 100;
+}
+
+/* Botón articulo*/
+.btn-article {
+    margin-top: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.6rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #065f46;
+    background-color: #ecfdf5;
+    transition: background-color 0.2s ease;
+}
+
+.btn-article:hover {
+    background-color: #d1fae5;
+}
+
 /* AVISO */
 .alert {
   max-width: 900px;
@@ -128,6 +153,29 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
+    background-color: white;
+}
+
+.article-card .btn-article {
+    margin-top: auto;          /* más separación */
+    padding: 0.75rem 1rem;
+    width: 100%;                
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #314d4a;
+    border: 1px solid #e5e7eb;   /* borde visible */
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.article-card .btn:hover {
+    background-color: #ecfdf5;
+    border-color: var(--color-de-botones-iconos);
+}
+
+.article-card .meta {
+    margin-top: auto;  
 }
 
 .plants img {
@@ -147,6 +195,15 @@ body {
     flex-grow: 1;   
 }
 
+/* Meta información */
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
 /* Etiqueta */
 .tag{
     align-self: flex-start; 
@@ -154,11 +211,4 @@ body {
     border-radius: 999px;
     font-size: 0.75rem;
     font-weight: 600;
-}
-
-.btn-warning {
-    position: -webkit-sticky;
-    position: fixed;
-    bottom: 20px;
-    z-index: 100;
 }
