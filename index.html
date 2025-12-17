@@ -92,9 +92,12 @@
                 </a>
     </main>
     <!-- Hero Section -->
+     
+<!-- Separación entre secciones -->
+<div class="my-5"></div> 
 
 <!-- Carts de imagenes -->
-<div class="container card-group mt-5 plants">
+<div class="container card-group my-5 plants">
     <div class="card">
         <img src="./images/manza.jfif" class="card-img-top" alt="...">
         <div class="card-body">
@@ -126,7 +129,7 @@
 <!-- Carts de imagenes -->
 
 <section class="articles">
-    <div class="cards">
+    <div class="container cards">
 
         <article class="article-card">
             <span class="tag primary">Fundamentos</span>
@@ -163,37 +166,46 @@
 
 
 <!-- Fondo pegajoso-->
- <section class="alert">
-    <nav class="navbar fixed-bottom bg-body-tertiary">
-        <div class="alert alert-warning container-fluid" role="alert">
-            <strong> ⚠️ Aviso Importante ⚠️ </strong>
-    <a class="navbar-brand" href="#">Las plantas medicinales contienen compuestos activos potentes.
-                Aunque son naturales, pueden interactuar con medicamentos y tener contraindicaciones.
-            
-            Consulte a un profesional de la salud antes de consumir cualquier planta
-            medicinal. La información aquí proporcionada es únicamente educativa y no
-            sustituye el consejo médico profesional.
-        </a>
+ <button type="button" class="btn btn-warning"
+        data-bs-toggle="modal"
+        data-bs-target="#avisoModal">
+  ⚠️ Aviso Importante
+</button>
 
-            
-            
-        </div>
-    </nav>
-    </section>
- 
+<div class="modal fade" id="avisoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Encabezado -->
+      <div class="modal-header bg-warning">
+        <h5 class="modal-title">
+          ⚠️ Aviso Importante ⚠️
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Cuerpo -->
+      <div class="modal-body">
+        <p>
+          Las plantas medicinales contienen compuestos activos potentes.
+          Aunque son naturales, pueden interactuar con medicamentos y tener contraindicaciones.
+        </p>
+        <p>
+          Consulte a un profesional de la salud antes de consumir cualquier planta medicinal.
+          La información aquí proporcionada es únicamente educativa y no sustituye el consejo médico profesional.
+        </p>
+      </div>
+
+      <!-- Pie -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Cerrar
+        </button>
+      </div>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
+  </div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
